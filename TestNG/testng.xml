@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Extent Report Tests">
+	<test name="Tests">
+		<classes>
+			<class name="CloudGrid.InputFormTests" />
+			<class name="CloudGrid.AlertTests"></class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
+
