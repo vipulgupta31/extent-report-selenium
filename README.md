@@ -39,6 +39,20 @@ public void captureScreenshot()
   }
 }
 ```
+
+## How to generate Extent Reports in Parallel?
+To generate extent reports in parallel in we make use of the `parallel` attribute in the testng.xml and also implement ThreadLocal for ExtentTest class object to implement thready-safety to prevent any overwritting or issues while generating Extent Reports.
+
+### To execute test case methods in parallel
+```
+<test name="Parallel Tests by Methods" parallel="methods" thread-count="3">
+```
+
+### To execute test classes in parallel
+```
+ <test name = "Parallel Tests by Classes" parallel = "classes" thread-count="3">
+```
+
 ## About Project
 It is created using Selenium with Java, TestNG, and Maven for Web-based automation
 
